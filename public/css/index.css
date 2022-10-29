@@ -1,0 +1,197 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	background-color: #286a6c;
+}
+
+.logo {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;
+	height: 100px;
+}
+
+.search {
+	margin: 0px;
+	padding: 0px;
+	border-radius: 0.25em;
+	background-color: #e9ecef;
+}
+
+.input-group-text {
+	cursor: pointer;
+}
+
+.logo h2 {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 1px 1px black;
+}
+
+.icons {
+	line-height: 1.5em
+}
+
+.form-control:focus {
+	border-color: #208E92;
+	box-shadow: 0 0 0 0.1em #208E92;
+} 
+
+section {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+.exibicao {
+	background-color: #fff;
+}
+
+.mapa {
+	background-color: #286a6c;
+}
+
+a:hover {
+	background-color: #286a6c !important;
+	color: #fff !important;
+}
+
+/* Modal */
+dialog {
+	position: absolute;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 0.25em;
+	border: none;
+	box-shadow: 1px 2px 3px black;
+}
+
+dialog h2 {
+	text-shadow: 1px 1px 2px black;
+	color: #fff;
+	width: 100%;
+	margin: 0px;
+	padding: 5px;
+	text-align: left;
+	background-color: rgb(40, 106, 108);
+}
+
+dialog p {
+	padding: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+dialog .btn_close {
+	background-color: rgb(40, 106, 108) !important;
+	float: right;
+	margin-right: 10px;
+}
+
+dialog::backdrop{
+  background-color: rgba(40, 106, 108, 0.7);
+}
+/* End Modal */
+
+/* Maps */
+#map {
+  height: 100%;
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+.custom-map-control-button:hover {
+  background: rgb(235, 235, 235);
+}
+/* End Maps */
+
+@media only screen and (min-width: 920px){
+	header {
+		height: 15vh;
+	}
+	.logo {
+		width: 12%;
+		float: left;
+	}
+	.logo h2{
+		font-size: 3em;
+		line-height: 2em;
+	}
+	.search {
+		width: 50%;
+		margin-right: 2em;
+		float: right;
+		top: 65%;
+		transform: translateY(-50%);
+	}
+	.exibicao {
+		float: left;
+		width: 40%;
+		height: 85vh;
+	}
+	.mapa {
+		float: right;
+		width: 60%;
+		height: 85vh;
+	}
+	dialog {
+		width: 35%;
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 919px){
+	header {
+		height: 175px;
+	}
+	.logo {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.search {
+		margin: 0 auto;
+		width: 65%;
+	}
+	.logo h2{
+		font-size: 2em;
+		line-height: 3em;
+	}
+	.exibicao {
+		width: 100%;
+		height: auto;
+	}
+	.mapa {
+		width: 100%;
+		height: 400px;
+	}
+	dialog {
+		width: 75%;
+		height: 150px;
+	}
+}
