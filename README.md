@@ -8,3 +8,6 @@ Esse Web Site serve para facilitar as Consultas por CEP's do nosso Brasil!
 Para usá-lo é bem simples, basta inserir no campo de pesquisa um CEP Válido que você deseja Consultar... E pronto, o Painel Simples do nosso Web Site preencherá a(s) informações referentes ao CEP pesquisado!
 
 Lembrando que você pode conferir com precisão a Região do CEP pesquisado através do Google Maps carregado com os dados das Coordenadas do CEP!
+
+## Tela:
+![tela cep](https://user-images.githubusercontent.com/55303217/216519573-47c64dc1-71fe-4fff-8af3-d18ef411c9cf.jpeg)
